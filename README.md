@@ -1,4 +1,4 @@
-<p align="center"><h1>NEX RVC FORK</h1>.</p>
+<p align="center"><h1>NEX RVC FORK</h1></p>
   
 <p align="center">VITS-based Voice Conversion focused on simplicity, quality, and performance.</p>
 
