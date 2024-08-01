@@ -14,10 +14,8 @@
   <a href="https://huggingface.co/IAHispano/Applio/tree/main/Compiled" target="_blank">📦 Compiled</a>
   •
 <p align="center">  
-  <a href="https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb" target="_blank">🔎 Google Colab (UI)</a>
-  •
-  <a href="https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio_NoUI.ipynb" target="_blank">🔎 Google Colab (No UI)</a>
-</p>
+  <a href="https://colab.research.google.com/drive/15Rnc2KW0DKPMMXw2fcuT-u3Git2azq_j?usp=sharing" target="_blank">🔎 Google Colab (UI/NO UI)</a>
+  
 
 ## Table of Contents
 
