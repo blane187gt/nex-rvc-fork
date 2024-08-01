@@ -422,83 +422,81 @@ def uvr_tab():
   with gr.Tabs():
     with gr.TabItem("BS/Mel Roformer"):
       with gr.Row():
-        roformer_model = gr.Dropdown(
-          label = "Select the Model",
-          choices=list(roformer_models.keys()),
-          interactive = True
-        )
-        roformer_output_format = gr.Dropdown(
-                    label = "Select the Output Format",
-                    choices = output_format,
-                    interactive = True
+              roformer_model = gr.Dropdown(
+                      label = "Select the Model",
+                      choices=list(roformer_models.keys()),
+                      interactive = True
+              )
+              roformer_output_format = gr.Dropdown(
+                      label = "Select the Output Format",
+                      choices = output_format,
+                      interactive = True
                 )
-            with gr.Row():
-                roformer_overlap = gr.Slider(
-                    minimum = 2,
-                    maximum = 4,
-                    step = 1,
-                    label = "Overlap",
-                    info = "Amount of overlap between prediction windows.",
-                    value = 4,
-                    interactive = True
-                )
-                roformer_segment_size = gr.Slider(
-                    minimum = 32,
-                    maximum = 4000,
-                    step = 32,
-                    label = "Segment Size",
-                    info = "Larger consumes more resources, but may give better results.",
-                    value = 256,
-                    interactive = True
-                )
-            with gr.Row():
-                roformer_audio = gr.Audio(
-                    label = "Input Audio",
-                    type = "numpy",
-                    interactive = True
-                )
-            with gr.Accordion("Separation by Link", open = False):
-                with gr.Row():
-                    roformer_link = gr.Textbox(
-                    label = "Link",
-                    placeholder = "Paste the link here",
-                    interactive = True
-                )
-                with gr.Row():
-                   gr.Markdown("You can paste the link to the video/audio from many sites, check the complete list [here](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)")
-                with gr.Row():
-                    roformer_download_button = gr.Button(
-                    "Download!",
-                    variant = "primary"
-                )
+              with gr.Row():
+                      roformer_overlap = gr.Slider(
+                              minimum = 2,
+                              maximum = 4,
+                              step = 1,
+                              label = "Overlap",
+                              info = "Amount of overlap between prediction windows.",
+                              value = 4,
+                              interactive = True
+                      )
+                      roformer_segment_size = gr.Slider(
+                              minimum = 32,
+                              maximum = 4000,
+                              step = 32,
+                              label = "Segment Size",
+                              info = "Larger consumes more resources, but may give better results.",
+                              value = 256,
+                              interactive = True
+                      )
+                      with gr.Row():
+                              roformer_audio = gr.Audio(
+                                      label = "Input Audio",
+                                      type = "numpy",
+                                      interactive = True
+                              )
+                              with gr.Accordion("Separation by Link", open = False):
+                                      with gr.Row():
+                                              roformer_link = gr.Textbox(                                                      
+                                                      label = "Link",
+                                                      placeholder = "Paste the link here",
+                                                      interactive = True
+                                              )
+                                              with gr.Row():              
+                                                      gr.Markdown("You can paste the link to the video/audio from many sites, check the complete list [here](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)")
+                                                      with gr.Row():
+                                                              roformer_download_button = gr.Button(
+                                                                      "Download!",
+                                                                      variant = "primary"
 
-            roformer_download_button.click(download_audio, [roformer_link], [roformer_audio])
-
-            with gr.Accordion("Batch Separation", open = False):
-                with gr.Row():
-                    roformer_input_path = gr.Textbox(
-                        label = "Input Path",
-                        placeholder = "Place the input path here",
-                        interactive = True
-                    )
-                    roformer_output_path = gr.Textbox(
-                        label = "Output Path",
-                        placeholder = "Place the output path here",
-                        interactive = True
-                    )
-                with gr.Row():
-                    roformer_bath_button = gr.Button("Separate!", variant = "primary")
-                with gr.Row():
-                    roformer_info = gr.Textbox(
-                        label = "Output Information",
-                        interactive = False
-                    )
-
-            roformer_bath_button.click(roformer_batch, [roformer_input_path, roformer_output_path, roformer_model, roformer_output_format, roformer_overlap, roformer_segment_size], [roformer_info])
-
-            with gr.Row():
+                                                              )
+                                                              roformer_download_button.click(download_audio, [roformer_link], [roformer_audio])
+                                with gr.Accordion("Batch Separation", open = False):
+                                        with gr.Row():
+                                                roformer_input_path = gr.Textbox(
+                                                        label = "Input Path",
+                                                        placeholder = "Place the input path here",
+                                                        interactive = True
+                                                )
+                                                roformer_output_path = gr.Textbox(
+                                                        label = "Output Path",
+                                                        placeholder = "Place the output path here",
+                                                        interactive = True
+                                                )
+                                                with gr.Row():
+                                                        roformer_bath_button = gr.Button("Separate!", variant = "primary")
+                                                        with gr.Row():
+                                                                roformer_info = gr.Textbox(
+                                                                        label = "Output Information",
+                                                                        interactive = False
+                                                                )
+                                                                
+                                                                roformer_bath_button.click(roformer_batch, [roformer_input_path, roformer_output_path, roformer_model, roformer_output_format, roformer_overlap, roformer_segment_size], [roformer_info])
+                                                                with gr.Row():
                 roformer_button = gr.Button("Separate!", variant = "primary")
-            with gr.Row():
+                with gr.Row():
                 roformer_stem1 = gr.Audio(
                     show_download_button = True,
                     interactive = False,
