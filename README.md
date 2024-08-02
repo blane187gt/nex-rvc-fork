@@ -4,12 +4,12 @@
 
 <p align="center">
   <a href="https://applio.org" target="_blank">🌐 Website</a>
-  •
+  
   <a href="https://docs.applio.org" target="_blank">📚 RVC/APPLIO Documentation</a>
-  •
+  
 <p align="center">
   <a href="https://huggingface.co/IAHispano/Applio/tree/main/Compiled" target="_blank">📦 Compiled</a>
-  •
+  
 <p align="center">  
   <a href="https://colab.research.google.com/drive/15Rnc2KW0DKPMMXw2fcuT-u3Git2azq_j?usp=sharing" target="_blank">🔎 Google Colab (UI/NO UI)</a>
   
