@@ -4,8 +4,7 @@
 
 ---
 
-<p align="center">
-  <a href="https://applio.org" target="_blank">🌐 Website</a>
+
 
 <p align="center">
   <a href="https://docs.applio.org" target="_blank">📚 RVC/APPLIO Documentation</a>
