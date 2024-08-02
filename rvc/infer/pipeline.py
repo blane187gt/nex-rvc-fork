@@ -229,6 +229,20 @@ class Pipeline:
         f0 = np.nan_to_num(target)
         return f0
 
+    def get_torchfcpe(self, x, sr, f0_min, f0_max, p_len, *args, **kwargs):
+        self.model_torchfcpe = spawn_bundled_infer_model(device=self.device)
+        f0 = self.model_torchfcpe.infer(
+            torch.from_numpy(x).float().unsqueeze(0).unsqueeze(-1).to(self.device),
+            sr=sr,
+            decoder_mode="local_argmax",
+            threshold=0.006,
+            f0_min=f0_min,
+            f0_max=f0_max,
+            output_interp_target_length=p_len
+        )
+        return f0.squeeze().cpu().numpy()
+
+    
     def get_f0_hybrid(
         self,
         methods_str,
@@ -270,6 +284,14 @@ class Pipeline:
                 )
                 f0 = self.model_rmvpe.infer_from_audio(x, thred=0.03)
                 f0 = f0[1:]
+            elif method == "fcpe+":
+                f0 = self.get_fcpe(x, f0_min=f0_min, f0_max=f0_max, p_len=p_len)
+            elif f0_method == "rmvpe+": 
+                params = {'x': x, 'p_len': p_len, 'f0_up_key': f0_up_key, 'f0_min': f0_min, 
+                          'f0_max': f0_max, 'time_step': time_step, 'filter_radius': filter_radius, 
+                          'crepe_hop_length': crepe_hop_length, 'model': "full"
+                         }
+                f0 = self.get_pitch_dependant_rmvpe(**params)
             elif method == "fcpe":
                 self.model_fcpe = FCPEF0Predictor(
                     os.path.join("rvc", "models", "predictors", "fcpe.pt"),
@@ -333,6 +355,14 @@ class Pipeline:
                 device=self.device,
             )
             f0 = self.model_rmvpe.infer_from_audio(x, thred=0.03)
+        elif method == "fcpe+":
+            f0 = self.get_fcpe(x, f0_min=f0_min, f0_max=f0_max, p_len=p_len)
+        elif f0_method == "rmvpe+": 
+            params = {'x': x, 'p_len': p_len, 'f0_up_key': f0_up_key, 'f0_min': f0_min, 
+                        'f0_max': f0_max, 'time_step': time_step, 'filter_radius': filter_radius, 
+                        'crepe_hop_length': crepe_hop_length, 'model': "full"
+                        }
+            f0 = self.get_pitch_dependant_rmvpe(**params)
         elif f0_method == "fcpe":
             self.model_fcpe = FCPEF0Predictor(
                 os.path.join("rvc", "models", "predictors", "fcpe.pt"),
