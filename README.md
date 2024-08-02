@@ -284,7 +284,7 @@ These enhancements contribute to a more robust and scalable codebase, making the
 
 This project follows the [MIT license from Applio](https://github.com/IAHispano/Applio/#) 
 
-> [!IMPORTANT]
+> [!be notice]
 > Please note, the use of generated audio
 > files falls under your own responsibility
 > and must always respect applicable
