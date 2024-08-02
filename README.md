@@ -17,7 +17,7 @@
 
 ---
 
-## Table of Contents
+
 > [!IMPORTANT]
 > Please note, the use of generated audio
 > files falls under your own responsibility
