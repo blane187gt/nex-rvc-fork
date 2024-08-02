@@ -26,8 +26,8 @@ torchaudio==2.1.1
 torch==2.1.1
 torchcrepe==0.0.23
 torchvision==0.16.1
-einops 
-libf0 
+einops
+libf0
 torchfcpe
 matplotlib==3.7.2
 tensorboard
