@@ -19,9 +19,7 @@ href="https://colab.research.google.com/drive/15Rnc2KW0DKPMMXw2fcuT-u3Git2azq_j?
 > Please note, the use of generated audio
 > files falls under your own responsibility
 > and must always respect applicable
-> copyrights. We encourage you to consider
-> supporting the continuous development and
-> maintenance of 'Applio' through a donation.
+> copyrights. 
 
 
 ## Installation
