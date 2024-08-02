@@ -77,21 +77,21 @@ Visit [Applio Documentation](https://docs.applio.org/) for a detailed UI usage e
 ### Windows
 
 ```bash
-./run-applio.bat
+./run.bat
 ```
 
 ### macOS
 
 ```bash
-chmod +x run-applio.sh
-./run-applio.sh
+chmod +x run.sh
+./run.sh
 ```
 
 ### Linux
 
 ```bash
-chmod +x run-applio.sh
-./run-applio.sh
+chmod +x run.sh
+./run.sh
 ```
 
 ### Makefile
@@ -99,7 +99,7 @@ chmod +x run-applio.sh
 For platforms such as [Paperspace](https://www.paperspace.com/):
 
 ```bash
-make run-applio
+make run
 ```
 
 ## Technical Information
@@ -282,16 +282,22 @@ These enhancements contribute to a more robust and scalable codebase, making the
 
 ## Commercial Usage
 
-For commercial purposes, please adhere to the guidelines outlined in the [MIT license](./LICENSE) governing this project. Prior to integrating Applio into your application, we kindly request that you contact us at support@applio.org to ensure ethical use.
+This project follows the [MIT license from Applio](https://github.com/IAHispano/Applio/lisence) 
 
-Please note, the use of Applio-generated audio files falls under your own responsibility and must always respect applicable copyrights. We encourage you to consider supporting the continuous development and maintenance of Applio through a donation. 
+> [!IMPORTANT]
+> Please note, the use of generated audio
+> files falls under your own responsibility
+> and must always respect applicable
+> copyrights. We encourage you to consider
+> supporting the continuous development and
+> maintenance of 'Applio' through a donation. 
 
 Your cooperation and support are greatly appreciated. Thank you!
 
-## References
 
-Applio is possible to these projects and those cited in their references.
+## credits to this Projct:
 
+- [Applio](https://github.com/IAHispano/Applio) by AI Hispano
 - [gradio-screen-recorder](https://huggingface.co/spaces/gstaff/gradio-screen-recorder) by gstaff
 - [rvc-cli](https://github.com/blaise-tk/rvc-cli) by blaisewf
 
