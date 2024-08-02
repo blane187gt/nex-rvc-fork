@@ -29,8 +29,8 @@ from assets.i18n.i18n import I18nAuto
 import assets.installation_checker as installation_checker
 from assets.discord_presence import RPCManager
 from assets.flask.server import start_flask, load_config_flask
-from core import run_prerequisites_script
 
+from core import run_prerequisites_script
 # Disable logging
 import logging
 
@@ -54,7 +54,7 @@ if my_applio:
 else:
     my_applio = "ParityError/Interstellar"
 
-with gr.Blocks(theme="Blane187/fuchsia", title="Nex RVC Fork") as apl:
+with gr.Blocks(theme="Blane187/fuchsia", title="Nex RVC Fork") as app:
     gr.Markdown("# NEX RVC FORK")
     gr.Markdown(
         (
