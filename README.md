@@ -286,6 +286,6 @@ Your cooperation and support are greatly appreciated. Thank you!
 
 ### Contributors
 
-<a href="https://github.com/IAHispano/Applio/graphs/contributors" target="_blank">
-  <img src="https://contrib.rocks/image?repo=IAHispano/Applio" />
+<a href="https://github.com/blane187gt/nex-rvc-fork/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=blane187gt/nex-rvc-fork" />
 </a>
