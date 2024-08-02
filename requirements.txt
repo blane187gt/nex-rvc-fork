@@ -7,6 +7,7 @@ numpy==1.23.5
 requests==2.32.0
 tqdm
 wget
+yt_dlp
 
 # Audio processing
 faiss-cpu==1.7.3
@@ -17,6 +18,8 @@ soundfile==0.12.1
 praat-parselmouth
 noisereduce
 audio_upscaler==0.1.4
+audio-separator[gpu]==0.17.5
+yt_dlp
 
 # Machine learning
 omegaconf==2.0.5; sys_platform == 'darwin'
