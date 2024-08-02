@@ -54,11 +54,11 @@ if my_applio:
 else:
     my_applio = "ParityError/Interstellar"
 
-with gr.Blocks(theme=my_applio, title="Applio") as Applio:
-    gr.Markdown("# Applio")
+with gr.Blocks(theme="Blane187/fuchsia", title="Nex RVC Fork") as apl:
+    gr.Markdown("# NEX RVC FORK")
     gr.Markdown(
-        i18n(
-            "Ultimate voice cloning tool, meticulously optimized for unrivaled power, modularity, and user-friendly experience."
+        (
+            "Forked of `Applio` VITS-based Voice Conversion focused on simplicity, quality and performance."
         )
     )
     gr.Markdown(
@@ -110,8 +110,7 @@ with gr.Blocks(theme=my_applio, title="Applio") as Applio:
 
 
 def launch_gradio(port):
-    Applio.launch(
-        favicon_path="assets/ICON.ico",
+    app.launch(
         share="--share" in sys.argv,
         inbrowser="--open" in sys.argv,
         server_port=port,
