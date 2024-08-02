@@ -7,9 +7,6 @@
   •
   <a href="https://docs.applio.org" target="_blank">📚 RVC/APPLIO Documentation</a>
   •
-  <a href="https://discord.gg/iahispano" target="_blank">☎️ Discord</a>
-</p
-
 <p align="center">
   <a href="https://huggingface.co/IAHispano/Applio/tree/main/Compiled" target="_blank">📦 Compiled</a>
   •
