@@ -105,7 +105,6 @@ with gr.Blocks(theme="Blane187/fuchsia", title="Nex RVC Fork") as apl:
             fake_gpu_tab()
         theme_tab()
         version_tab()
-        lang_tab()
         restart_tab()
 
 
