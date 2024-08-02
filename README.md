@@ -282,7 +282,7 @@ These enhancements contribute to a more robust and scalable codebase, making the
 
 ## Commercial Usage
 
-This project follows the [MIT license from Applio](https://github.com/IAHispano/Applio/lisence) 
+This project follows the [MIT license from Applio](https://github.com/IAHispano/Applio/#) 
 
 > [!IMPORTANT]
 > Please note, the use of generated audio
