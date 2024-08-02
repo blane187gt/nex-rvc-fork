@@ -2,6 +2,8 @@
   
 <p align="center">VITS-based Voice Conversion focused on simplicity, quality, and performance.</p>
 
+---
+
 <p align="center">
   <a href="https://applio.org" target="_blank">🌐 Website</a>
   
@@ -12,25 +14,18 @@
   
 <p align="center">  
   <a href="https://colab.research.google.com/drive/15Rnc2KW0DKPMMXw2fcuT-u3Git2azq_j?usp=sharing" target="_blank">🔎 Google Colab (UI/NO UI)</a>
-  
+
+---
 
 ## Table of Contents
+> [!IMPORTANT]
+> Please note, the use of generated audio
+> files falls under your own responsibility
+> and must always respect applicable
+> copyrights. We encourage you to consider
+> supporting the continuous development and
+> maintenance of 'Applio' through a donation.
 
-- [Installation](#installation)
-  - [Windows](#windows)
-  - [macOS](#macos)
-  - [Linux](#linux)
-  - [Makefile](#makefile)
-- [Usage](#usage)
-  - [Windows](#windows-1)
-  - [macOS](#macos-1)
-  - [Linux](#linux-1)
-  - [Makefile](#makefile-1)
-- [Technical Information](#technical-information)
-- [Repository Enhancements](#repository-enhancements)
-- [Commercial Usage](#commercial-usage)
-- [References](#references)
-  - [Contributors](#contributors)
 
 ## Installation
 
@@ -284,13 +279,6 @@ These enhancements contribute to a more robust and scalable codebase, making the
 
 This project follows the [MIT license from Applio](https://github.com/IAHispano/Applio/#) 
 
-> [!IMPORTANT]
-> Please note, the use of generated audio
-> files falls under your own responsibility
-> and must always respect applicable
-> copyrights. We encourage you to consider
-> supporting the continuous development and
-> maintenance of 'Applio' through a donation. 
 
 Your cooperation and support are greatly appreciated. Thank you!
 
